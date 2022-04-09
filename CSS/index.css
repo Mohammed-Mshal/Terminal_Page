@@ -23,7 +23,7 @@ body::before {
     height: 100%;
     width: 100%;
     top: 0;
-    z-index: -5;
+    z-index: -10;
 }
 
 .btn-get,
@@ -156,18 +156,19 @@ body::before {
     color: white;
 }
 
-.landing .ipad {
+.ipad {
     z-index: -1;
 }
 
-@media screen {
+
+@media (max-width:767px) {
     .landing .ipad {
-        bottom: -10%;
-        transform: translate(-50%, 130%);
-        -webkit-transform: translate(-50%, 130%);
-        -moz-transform: translate(-50%, 130%);
-        -ms-transform: translate(-50%, 130%);
-        -o-transform: translate(-50%, 130%);
+        bottom: -20%;
+        transform: translate(-50%, 150%);
+        -webkit-transform: translate(-50%, 150%);
+        -moz-transform: translate(-50%, 150%);
+        -ms-transform: translate(-50%, 150%);
+        -o-transform: translate(-50%, 150%);
     }
 }
 
@@ -215,16 +216,45 @@ body::before {
 .section-feat .ipad {
     max-height: 400px;
 }
-
 .section-feat .ipad .iphone {
     max-width: 300px;
 }
 
-@media screen {
-    .section-feat .ipad {
-        top: 30%;
-    }
+
+@media (max-width:767px) {
+    .ipad {
+        bottom: -10%;
+        transform: translateY(25%);
+        -webkit-transform: translateY(25%);
+        -moz-transform: translateY(25%);
+        -ms-transform: translateY(25%);
+        -o-transform: translateY(25%);
 }
+}
+
+@media (min-width: 768px) {
+    .ipad {
+        bottom: -20%;
+        transform: translateY(10%);
+        -webkit-transform: translateY(10%);
+        -moz-transform: translateY(10%);
+        -ms-transform: translateY(10%);
+        -o-transform: translateY(10%);
+}
+}
+
+@media (min-width: 1200px) {
+    .ipad {
+        bottom: -10%;
+        transform: translateY(15%);
+        -webkit-transform: translateY(15%);
+        -moz-transform: translateY(15%);
+        -ms-transform: translateY(15%);
+        -o-transform: translateY(15%);
+}
+}
+
+
 
 @media (max-width:991px) {
     .section-feat ul.list-unstyled {
